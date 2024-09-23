@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    height: 3rem;
+    background-color: #111;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.navbar > * {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-logo {
+    height: 100%;
+}
+
+.brand-logo > img {
+    height: 100%;
+    filter: invert(1) hue-rotate(180deg) saturate(10);
+}
+
+.navbar-search {
+    width: 50%;
+    height: 100%;
+}
+
+#voice-search-button {
+    text-wrap: nowrap;
+}
+
+.icon {
+    font-size: 1rem;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: #111;
+    color: white;
+    border: none;
+}
+
+.icon:hover {
+    background-color: #333;
+}
+
+.search-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 2rem;
+    border: 0.05rem solid hsl(360deg, 0%, 50%);
+    overflow: hidden;
+}
+
+.search-container > button {
+    background-color: #333;
+    aspect-ratio: initial;
+    height: 100%;
+    border-radius: 0;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.search-container > input {
+    flex-grow: 1;
+    height: 100%;
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+
+
+
+
+/* 
+
+<div class="banner">
+    <div class="banner-left">
+        <div class="banner-top">
+            <div class="banner-logo">
+                <img src="" alt="">
+            </div>
+            <div class="banner-text">
+                <p>
+                    Hurry! Dive right into 2 months of Premium, free of charge. Terms apply. Cancel anytime.
+                </p>
+            </div>
+        </div>
+
+        <div class="banner-bottom">
+            <div class="banner-button">
+                <button>
+                    2 Months Trial
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-right">
+        <div class="banner-close">
+            <button id="close-button">Close</button>
+        </div>
+    </div>
+</div>
+
+*/
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("https://www.gstatic.com/youtube/img/promos/growth/8d1739e9995a139071f2574d7f62f82678e61f001e22cd6d7af420fb79d30832_2560x520.jpeg");
+    width: 100%;
+    height: 260px;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+.banner-left {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.banner-logo {
+    height: 5rem;
+}
+
+.banner-logo img {
+    height: 100%;
+    width: auto;
+}
+
+.banner-text {}
+.banner-text p {
+    font-weight: bold;
+}
+
+.banner-bottom {}
+.banner-button {}
+.banner-button button {
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner-button button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    scale: 1.2;
+    animation: float 1s infinite linear;
+}
+
+@keyframes float {
+    0%, 50%, 100% {
+        transform: translate(0rem, 0rem);
+    }
+    
+    25% {
+        transform: translate(1rem, 0rem);
+    }
+    
+    75% {
+        transform: translate(-1rem, 0rem);
+    }
+}
+
+.banner-right {}
+.banner-close {}
+.banner-close button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    border: 0.1rem solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner-close button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* @media (max-width: 600px) {
+    .banner-logo {
+        height: 2rem;
+    }
+} */
+
+@media (min-width: 600px) and (max-width: 800px) {
+    * {
+        display: none;
+    }
+}
+
+

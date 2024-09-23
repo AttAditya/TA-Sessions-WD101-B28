@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-box {
+    margin: 2rem;
+    width: 30rem;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    border: 0.1rem solid black;
+}
+
+.child-box {
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    border: 0.1rem solid black;
+}
+
+.static {
+    position: static;
+    right: 10rem;
+    top: 10rem;
+}
+
+.relative {
+    position: relative;
+    right: 1rem;
+    top: 2rem;
+}
+
+.absolute {
+    width: 50%;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.fixed {
+    position: fixed;
+    background-color: red;
+    z-index: 4;
+    top: 2rem;
+    right: 2rem;
+    width: 50%;
+}
+
+.sticky {
+    position: sticky;
+    background-color: green;
+    top: 2rem;
+    left: 5rem;
+}
+
